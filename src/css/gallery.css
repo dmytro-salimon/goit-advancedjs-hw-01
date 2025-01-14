@@ -1,0 +1,47 @@
+@import url('./reset.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.gallery-item {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-link {
+    display: block;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
