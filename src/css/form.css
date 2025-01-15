@@ -1,0 +1,88 @@
+@import url('./reset.css');
+@import url('izitoast/dist/css/iziToast.min.css');
+
+/* Контейнер для центрування форми */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Карточка форми */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Лейбли */
+.form-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #2E2F42;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+/* Інпути */
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    color: #2E2F42;
+
+    box-sizing: border-box;
+}
+
+/* Текстове поле (textarea) */
+.feedback-form textarea {
+    resize: none;
+    rows: 8;
+    margin-bottom: 8px;
+}
+
+/* Кнопка */
+.feedback-form button {
+    align-self: flex-start;
+    padding: 8px 16px;
+    background: #4E75FF;
+    color: #FFF;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Ховер-ефект для кнопки */
+.feedback-form button:hover {
+    background: #365bbf;
+}

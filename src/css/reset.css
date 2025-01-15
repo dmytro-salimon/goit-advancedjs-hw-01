@@ -2,6 +2,11 @@
 
 body {
     font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
@@ -31,4 +36,23 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+body>p {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 0;
+}
+
+body>p a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #3b82f6;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+body>p a:hover {
+    color: #2563eb;
 }
