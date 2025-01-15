@@ -1,4 +1,4 @@
-body{font-family:sans-serif}h1,h2,h3,h4,h5,h6,p{margin-top:0;margin-bottom:0}ul,ol{margin-top:0;margin-bottom:0;padding-left:0;list-style-type:none}a{text-decoration:none}img{display:block;max-width:100%;height:auto}/*!
+body{font-family:sans-serif;margin:0;height:100vh;display:flex;justify-content:center;align-items:center}h1,h2,h3,h4,h5,h6,p{margin-top:0;margin-bottom:0}ul,ol{margin-top:0;margin-bottom:0;padding-left:0;list-style-type:none}a{text-decoration:none}img{display:block;max-width:100%;height:auto}body>p{position:absolute;top:15px;left:15px;margin:0}body>p a{text-decoration:none;font-size:14px;color:#3b82f6;font-weight:700;transition:color .3s ease}body>p a:hover{color:#2563eb}/*!
 	By André Rinas, www.andrerinas.de
 	Documentation, www.simplelightbox.com
 	Available for use under the MIT License
