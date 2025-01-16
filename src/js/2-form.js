@@ -7,6 +7,7 @@ const formData = {
   message: '',
 };
 
+
 const fillFormField = () => {
   const formDataFromLS = load('feedback-form-state');
 
@@ -22,21 +23,24 @@ const fillFormField = () => {
 
 fillFormField();
 
+
 const onFormFieldChange = event => {
   const { target: formField } = event;
 
   const fieldName = formField.name;
   const fieldValue = formField.value;
 
-  formData[fieldName] = fieldValue;
+  formData[fieldName] = fieldValue.trim(); 
 
   save('feedback-form-state', formData);
 };
+
 
 const onFeedbackFormSubmit = event => {
   event.preventDefault();
 
   const formDataValues = Object.values(formData);
+
 
   if (formDataValues.some(el => el.trim() === '')) {
     iziToast.error({
@@ -47,10 +51,16 @@ const onFeedbackFormSubmit = event => {
     return;
   }
 
+
+  console.log(formData);
+
+
   event.currentTarget.reset();
-  Object.keys(formData).forEach(key => (formData[key] = '')); 
+  Object.keys(formData).forEach(key => (formData[key] = ''));
   localStorage.removeItem('feedback-form-state');
 };
 
-feedbackFormEl.addEventListener('input', onFormFieldChange); 
+
+feedbackFormEl.addEventListener('input', onFormFieldChange);
 feedbackFormEl.addEventListener('submit', onFeedbackFormSubmit);
+

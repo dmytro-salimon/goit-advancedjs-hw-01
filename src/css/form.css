@@ -58,7 +58,6 @@
 /* Текстове поле (textarea) */
 .feedback-form textarea {
     resize: none;
-    rows: 8;
     margin-bottom: 8px;
 }
 
@@ -84,5 +83,5 @@
 
 /* Ховер-ефект для кнопки */
 .feedback-form button:hover {
-    background: #365bbf;
+  background: #365bbf;
 }
